@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/swiper.css">
+	<style>
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: #f00;
+			margin-top: 10px;
+		}
+
+		.box1{
+			-webkit-animation: move 5s 1s forwards linear; /*匀速*/
+			-o-animation: move 5s 1s forwards linear;
+			animation: move 5s 1s forwards linear;
+		}
+
+		.box2{
+			-webkit-animation: move 5s 1s forwards ease; 
+			-o-animation: move 5s 1s forwards ease;
+			animation: move 5s 1s forwards ease;
+		}
+
+		.box3{
+			-webkit-animation: move 5s 1s forwards ease-in; /*低速开始*/
+			-o-animation: move 5s 1s forwards ease-in;
+			animation: move 5s 1s forwards ease-in;
+		}
+
+		.box4{
+			-webkit-animation: move 5s 1s forwards ease-out; /*低速结束*/
+			-o-animation: move 5s 1s forwards ease-out;
+			animation: move 5s 1s forwards ease-out;
+		}
+
+		.box5{
+			-webkit-animation: move 5s 1s forwards ease-in-out; /*低速开始低速结束*/
+			-o-animation: move 5s 1s forwards ease-in-out;
+			animation: move 5s 1s forwards ease-in-out;
+		}
+
+		@-webkit-keyframes move {
+				from { margin-left: 0; }
+				to { margin-left: 1000px; }
+			}
+			}
+			@keyframes move {
+				from { margin-left: 0; }
+				to { margin-left: 1000px; }
+			}
+
+
+	</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+	<div class="box5"></div>
+</body>
+</html>
